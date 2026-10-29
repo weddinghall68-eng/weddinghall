@@ -1,0 +1,23 @@
+{
+  "name": "nasim-wedding-supabase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "نظام مجموعة النسيم - Vercel + Supabase PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check api/index.js && node --check public/app.js && node --check scripts/import-sqlite-to-supabase.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "qrcode": "^1.5.4",
+    "pg": "^8.16.3"
+  }
+}
